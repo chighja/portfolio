@@ -15,16 +15,22 @@
 
   <body>
     <header>
-      <img id="proPic" src="./public/images/pp3.jpg" alt="profile picture" />
-      <div id="name">
-        <h2 class="openText">Corey Highland</h2>
-        <h3 class="title">Web Developer</h3>
+      <div id="head">
+        <img id="proPic" src="./public/images/pp3.jpg" alt="profile picture" />
+        <div id="name">
+          <h2 class="openText">Corey Highland</h2>
+          <h3 class="title">Web Developer</h3>
+        </div>
       </div>
+      <nav>
+        <a href="#about">About</a> <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <div id="container">
       <main>
-        <div class="icon"><i class="fas fa-user-astronaut"></i></div>
+        <div id="about" class="icon"><i class="fas fa-user-astronaut"></i></div>
 
         <section id="bio">
           <h3>A little bit about me:</h3>
@@ -41,11 +47,13 @@
           </p>
         </section>
 
-        <div class="icon"><i class="fas fa-space-shuttle"></i></div>
+        <div id="projects" class="icon">
+          <i class="fas fa-space-shuttle"></i>
+        </div>
 
         <section id="portfolio">
           <h2 class="openText">Here are some things I've built:</h2>
-          <section class="portBox">
+          <div class="portBox">
             <h3 class="title">The Weather App</h3>
             <p class="dateMade">August, 2018</p>
             <p class="about">
@@ -54,9 +62,29 @@
               conditions in your area along with suggestive icons for what
               clothing items you may want to wear.
             </p>
+            <a
+              href="https://coreyjhighland.github.io/theWeatherApp/"
+              target="_blank"
+            >
+              <img
+                class="appPic"
+                src="./public/images/twa.jpg"
+                alt="The Weather App screenshot"
+              />
+            </a>
+            <div class="linkBox">
+              <a
+                href="https://coreyjhighland.github.io/theWeatherApp/"
+                target="_blank"
+                >View App</a
+              >
+              <a href="https://github.com/chighja/theweatherapp" target="_blank"
+                >View Code</a
+              >
+            </div>
             <p class="madeWith">Made with HTML, CSS, JavaScript, and jQuery.</p>
-          </section>
-          <section class="portBox">
+          </div>
+          <div class="portBox">
             <h3 class="title">Take Me There</h3>
             <p class="dateMade">September, 2018</p>
             <p class="about">
@@ -65,12 +93,25 @@
               vacation spots, and reviews from travelers just like you, there’s
               no better way to begin planning your next trip!
             </p>
+            <a href="" target="_blank">
+              <img
+                class="appPic"
+                src="./public/images/tmt.jpg"
+                alt="Take Me There app screenshot"
+              />
+            </a>
+            <div class="linkBox">
+              <a href="" target="_blank">View App</a>
+              <a href="https://github.com/chighja/takemethere" target="_blank"
+                >View Code</a
+              >
+            </div>
             <p class="madeWith">
               Made with HTML, CSS, JavaScript, jQuery, Node.js, Express.js,
               Mongoose.js, and MongoDb.
             </p>
-          </section>
-          <section class="portBox">
+          </div>
+          <div class="portBox">
             <h3 class="title">Hand-To-Hand</h3>
             <p class="dateMade">December, 2018</p>
             <p class="about">
@@ -78,15 +119,32 @@
               cross-universe characters would win in their respective match-ups!
               It's a matter of skill, power, and abilities!
             </p>
+            <a href="https://warm-inlet-87726.herokuapp.com/" target="_blank">
+              <img
+                class="appPic"
+                src="./public/images/h2h.jpg"
+                alt="Hand to Hand app screenshot"
+              />
+            </a>
+            <div class="linkBox">
+              <a href="https://warm-inlet-87726.herokuapp.com/" target="_blank"
+                >View App</a
+              >
+              <a
+                href="https://github.com/chighja/handToHandClient"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
             <p class="madeWith">
               Made with HTML, CSS, ReactJS, ExpressJS, MongooseJS, and MongoDB.
             </p>
-          </section>
+          </div>
         </section>
       </main>
     </div>
 
-    <div class="icon"><i class="fas fa-satellite"></i></div>
+    <div id="contact" class="icon"><i class="fas fa-satellite"></i></div>
 
     <footer>
       <h3>Make contact:</h3>
