@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+  text-align: right;
+  width: 100%;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#container {
+  width: 100%;
+  padding: 1em;
+  /* background-image: url('./public/images/dot.png');
+  background-repeat: repeat-x;
+  background-size: 8px; */
+}
+
+#bio,
+#portfolio {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+footer {
+  text-align: center;
+  /* margin-left: 0.5em;
+  margin-right: 0.5em; */
+}
+
+#info {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2em;
+}
+
+#proPic {
+  margin-right: 0.5em;
+  border-radius: 5em;
+  width: 10em;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.fas {
+  font-size: 3.5em;
+}
+
+.fab {
+  margin-left: 0.5em;
+}
+
+.openText {
+  font-size: 2em;
+}
