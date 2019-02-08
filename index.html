@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Corey Highland | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa|Josefin+Sans"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -18,45 +22,57 @@
       <div id="head">
         <img id="proPic" src="./public/images/pp3.jpg" alt="profile picture" />
         <div id="name">
-          <h2 class="openText">Corey Highland</h2>
+          <h2 class="bigTxt">Corey Highland</h2>
+          <hr />
           <h3 class="title">Web Developer</h3>
         </div>
       </div>
       <nav>
-        <a href="#about">About</a> <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a id="aboutBtn" class="mainTxt headLink scroll" href="#about">About</a>
+        |
+        <a id="projectsBtn" class="mainTxt headLink scroll" href="#projects"
+          >Projects</a
+        >
+        |
+        <a id="contactBtn" class="mainTxt headLink scroll" href="#contact"
+          >Contact</a
+        >
       </nav>
     </header>
 
     <div id="container">
       <main>
-        <div id="about" class="icon"><i class="fas fa-user-astronaut"></i></div>
+        <div id="about" class="icon">
+          <i class="fas fas-icon fa-user-astronaut"></i>
+        </div>
 
         <section id="bio">
-          <h3>A little bit about me:</h3>
-          <p>
-            Hello! My name is Corey and I am a full stack web developer and
-            recent graduate of the Full Stack Web Development program at
-            Thinkful. I am located in the Baltimore/DC area.
-          </p>
-          <p>
-            I love to experience new ideas and find that life is an ongoing
-            journey of learning. If I'm not devling into code headfirst, I'm
-            often playing an instrument or singing with a group in a venue or
-            divebar near you.
-          </p>
+          <h3 class="bigTxt">A little bit about me:</h3>
+          <div class="about">
+            <p class="mainTxt">
+              Hello! My name is Corey and I am a full stack web developer and
+              recent graduate of the Full Stack Web Development program at
+              Thinkful. I am located in the Baltimore/DC area.
+            </p>
+            <p class="mainTxt">
+              I love to experience new ideas and find that life is an ongoing
+              journey of learning. If I'm not delving into code I'm often
+              playing an instrument or singing with an odd group in a venue or
+              divebar near you.
+            </p>
+          </div>
         </section>
 
         <div id="projects" class="icon">
-          <i class="fas fa-space-shuttle"></i>
+          <i class="fas fas-icon fa-space-shuttle"></i>
         </div>
 
         <section id="portfolio">
-          <h2 class="openText">Here are some things I've built:</h2>
+          <h2 class="bigTxt">Here are some things I've built:</h2>
           <div class="portBox">
             <h3 class="title">The Weather App</h3>
-            <p class="dateMade">August, 2018</p>
-            <p class="about">
+            <p class="smallTxt dateMade">August, 2018</p>
+            <p class="mainTxt about">
               What is today going to be like? What should you wear? With The
               Weather App you can see real time temperatures and weather
               conditions in your area along with suggestive icons for what
@@ -74,20 +90,27 @@
             </a>
             <div class="linkBox">
               <a
+                class="mainLink"
                 href="https://coreyjhighland.github.io/theWeatherApp/"
                 target="_blank"
                 >View App</a
               >
-              <a href="https://github.com/chighja/theweatherapp" target="_blank"
+              <a
+                class="mainLink"
+                href="https://github.com/chighja/theweatherapp"
+                target="_blank"
                 >View Code</a
               >
             </div>
-            <p class="madeWith">Made with HTML, CSS, JavaScript, and jQuery.</p>
+            <p class="smallTxt madeWith">
+              Made with HTML, CSS, JavaScript, and jQuery.
+            </p>
           </div>
+          <hr class="line" />
           <div class="portBox">
             <h3 class="title">Take Me There</h3>
-            <p class="dateMade">September, 2018</p>
-            <p class="about">
+            <p class="smallTxt dateMade">September, 2018</p>
+            <p class="mainTxt about">
               Before you decide on your next vacation spot, check out Take Me
               There. With pictures of some of today’s most visited and beautiful
               vacation spots, and reviews from travelers just like you, there’s
@@ -101,20 +124,24 @@
               />
             </a>
             <div class="linkBox">
-              <a href="" target="_blank">View App</a>
-              <a href="https://github.com/chighja/takemethere" target="_blank"
+              <a class="mainLink" href="" target="_blank">View App</a>
+              <a
+                class="mainLink"
+                href="https://github.com/chighja/takemethere"
+                target="_blank"
                 >View Code</a
               >
             </div>
-            <p class="madeWith">
+            <p class="smallTxt madeWith">
               Made with HTML, CSS, JavaScript, jQuery, Node.js, Express.js,
               Mongoose.js, and MongoDb.
             </p>
           </div>
+          <hr class="line" />
           <div class="portBox">
             <h3 class="title">Hand-To-Hand</h3>
-            <p class="dateMade">December, 2018</p>
-            <p class="about">
+            <p class="smallTxt dateMade">December, 2018</p>
+            <p class="mainTxt about">
               Hand-To-Hand allows you to cast your votes as to which
               cross-universe characters would win in their respective match-ups!
               It's a matter of skill, power, and abilities!
@@ -127,16 +154,20 @@
               />
             </a>
             <div class="linkBox">
-              <a href="https://warm-inlet-87726.herokuapp.com/" target="_blank"
+              <a
+                class="mainLink"
+                href="https://warm-inlet-87726.herokuapp.com/"
+                target="_blank"
                 >View App</a
               >
               <a
+                class="mainLink"
                 href="https://github.com/chighja/handToHandClient"
                 target="_blank"
                 >View Code</a
               >
             </div>
-            <p class="madeWith">
+            <p class="smallTxt madeWith">
               Made with HTML, CSS, ReactJS, ExpressJS, MongooseJS, and MongoDB.
             </p>
           </div>
@@ -144,13 +175,21 @@
       </main>
     </div>
 
-    <div id="contact" class="icon"><i class="fas fa-satellite"></i></div>
+    <div id="contact" class="icon">
+      <i class="fas fas-icon-bottom fa-satellite"></i>
+    </div>
 
     <footer>
       <h3>Make contact:</h3>
       <div id="info">
-        <a href="mailto:chighja@gmail.com">chighja@gmail.com</a>
-        <a href="https://www.linkedin.com/in/coreyjhighland/" target="_blank"
+        <a class="mainLink" href="mailto:chighja@gmail.com"
+          >chighja@gmail.com</a
+        >
+        <br />
+        <a
+          class="mainLink"
+          href="https://www.linkedin.com/in/coreyjhighland/"
+          target="_blank"
           ><i class="fab fa-linkedin"></i
         ></a>
         <a href="https://github.com/chighja" target="_blank"
@@ -158,5 +197,12 @@
         ></a>
       </div>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>

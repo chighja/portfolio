@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #fffafa;
+  background-color: #fcfcfc;
+  font-family: 'Comfortaa', serif;
 }
 
 #head {
@@ -20,22 +21,25 @@ body {
 }
 
 nav {
+  margin: 1em;
   text-align: center;
 }
 
 #container {
   width: 100%;
   padding: 1em;
-  /* background-image: url('./public/images/dot.png');
-  background-repeat: repeat-x;
-  background-size: 8px; */
 }
 
 #bio,
 #portfolio {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  line-height: 2em;
 }
 
 .portBox {
@@ -47,26 +51,30 @@ nav {
 }
 
 .about {
+  margin-top: 2em;
+  margin-bottom: 2em;
   text-align: left;
+}
+
+#info {
+  margin: 1em;
 }
 
 footer {
   text-align: center;
-  margin-bottom: 1em;
-  /* margin-left: 0.5em;
-  margin-right: 0.5em; */
-}
-
-#info {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.2em;
+  margin: 1.5em;
+  padding: 1em;
 }
 
 #proPic {
   margin-right: 0.5em;
   border-radius: 5em;
   width: 10em;
+}
+
+.appPic {
+  border-radius: 0.2em;
+  box-shadow: 10px 10px 24px -9px rgba(88, 111, 107, 1);
 }
 
 .icon {
@@ -79,10 +87,65 @@ footer {
   font-size: 3.5em;
 }
 
-.fab {
-  margin-left: 0.5em;
+.fas-icon {
+  margin: 1.5em;
 }
 
-.openText {
+.fas-icon-bottom {
+  margin-top: 1.5em;
+}
+
+.fab {
+  /* margin-left: 0.5em; */
+  font-size: 2.5em;
+}
+
+.fab:hover {
+  transition: 0.1s ease-in-out;
+  font-size: 3em;
+}
+
+.bigTxt {
+  font-family: 'Joesfin Sans', sans-serif;
   font-size: 2em;
+}
+
+.mainTxt {
+  font-size: 1.1em;
+}
+
+.smallTxt {
+  font-size: 0.9em;
+}
+
+.title {
+  color: #1b456d;
+  font-size: 1.6em;
+}
+
+.headLink {
+  text-decoration: none;
+  color: #1b456d;
+}
+
+.headLink:hover {
+  color: #449b81;
+}
+
+.mainLink {
+  color: #1b456d;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.mainLink:hover {
+  cursor: pointer;
+  text-decoration: overline;
+  color: #449b81;
+}
+
+.mainLink:active {
+  border: none;
+  color: #1b456d;
+  transition: font 0.1s;
 }
