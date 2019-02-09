@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
   text-align: right;
   width: 100%;
   padding-left: 5em;
@@ -27,100 +27,101 @@ nav {
 
 #container {
   width: 100%;
-  padding: 1em;
 }
 
 #bio,
 #portfolio {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 6%;
+  padding-right: 6%;
   width: 100%;
-  line-height: 2em;
+  line-height: 1.4em;
 }
 
 .portBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4em;
+  margin: 1.8em;
   text-align: center;
 }
 
 .about {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: left;
 }
 
 #info {
-  margin: 1em;
+  margin: 0.5em;
 }
 
 footer {
   text-align: center;
-  margin: 1.5em;
-  padding: 1em;
+  margin: 1em;
+  padding: 0.5em;
 }
 
 #proPic {
   margin-right: 0.5em;
   border-radius: 5em;
-  width: 10em;
+  width: 8em;
 }
 
 .appPic {
   border-radius: 0.2em;
   box-shadow: 10px 10px 24px -9px rgba(88, 111, 107, 1);
+  width: 100%;
 }
 
 .icon {
   display: flex;
   justify-content: center;
-  margin: 1em;
 }
 
 .fas {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .fas-icon {
-  margin: 1.5em;
+  margin: 0.8em;
 }
 
 .fas-icon-bottom {
-  margin-top: 1.5em;
+  margin-top: 0.8em;
 }
 
 .fab {
   margin-top: 0.5em;
-  font-size: 2.5em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-size: 2.8em;
 }
 
 .fab:hover {
   transition: 0.1s ease-in-out;
-  font-size: 3em;
+  font-size: 3.2em;
 }
 
 .bigTxt {
   font-family: 'Joesfin Sans', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .mainTxt {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .smallTxt {
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 
 .title {
   color: #1b456d;
-  font-size: 1.6em;
+  font-size: 1.25em;
 }
 
 .headLink {
@@ -133,9 +134,10 @@ footer {
 }
 
 .mainLink {
+  margin: 0.25em;
   color: #1b456d;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .mainLink:hover {
@@ -148,4 +150,170 @@ footer {
   border: none;
   color: #1b456d;
   transition: font 0.1s;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #head {
+    margin-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  #container {
+    padding: 0.8em;
+  }
+
+  #bio,
+  #portfolio {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    line-height: 2.1em;
+  }
+
+  .portBox {
+    margin: 2.8em;
+  }
+
+  .about {
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+  }
+
+  #info {
+    margin: 0.8em;
+  }
+
+  .fas {
+    font-size: 3.3em;
+  }
+
+  .fas-icon {
+    margin: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    padding: 0.9em;
+  }
+
+  #bio,
+  #portfolio {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    line-height: 2.2em;
+  }
+
+  .portBox {
+    margin: 3em;
+  }
+
+  .about {
+    margin-top: 1.9em;
+    margin-bottom: 1.9em;
+  }
+
+  #info {
+    margin: 1em;
+  }
+
+  .fas {
+    font-size: 3.3em;
+  }
+
+  .fas-icon {
+    margin: 1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #head {
+    margin-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  #container {
+    padding: 1em;
+  }
+
+  #bio,
+  #portfolio {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 2em;
+  }
+
+  .portBox {
+    margin: 4em;
+  }
+
+  .about {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  #info {
+    margin: 1em;
+  }
+
+  footer {
+    margin: 1.5em;
+    padding: 1em;
+  }
+
+  #proPic {
+    width: 10em;
+  }
+
+  .icon {
+    margin: 1em;
+  }
+
+  .fas {
+    font-size: 3.5em;
+  }
+
+  .fas-icon {
+    margin: 1.5em;
+  }
+
+  .fas-icon-bottom {
+    margin-top: 1.5em;
+  }
+
+  .fab {
+    margin-top: 0.5em;
+    font-size: 2.5em;
+  }
+
+  .fab:hover {
+    font-size: 3em;
+  }
+
+  .fab:active {
+    font-size: 3em;
+  }
+
+  .bigTxt {
+    font-size: 2em;
+  }
+
+  .mainTxt {
+    font-size: 1.1em;
+  }
+
+  .smallTxt {
+    font-size: 0.9em;
+  }
+
+  .title {
+    font-size: 1.6em;
+  }
+
+  .mainLink {
+    font-size: 1em;
+  }
 }
