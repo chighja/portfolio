@@ -68,7 +68,8 @@ footer {
 #proPic {
   margin-right: 0.5em;
   border-radius: 5em;
-  width: 8em;
+  width: 5em;
+  height: 5em;
 }
 
 .appPic {
@@ -86,7 +87,11 @@ footer {
   font-size: 3em;
 }
 
-.fas-icon {
+.fas-icon-top {
+  margin: 0.5em;
+}
+
+.fas-icon-mid {
   margin: 0.8em;
 }
 
@@ -112,10 +117,12 @@ footer {
 }
 
 .mainTxt {
+  color: #000000;
   font-size: 1em;
 }
 
 .smallTxt {
+  color: #000000;
   font-size: 0.75em;
 }
 
@@ -182,6 +189,12 @@ footer {
   #info {
     margin: 0.8em;
   }
+  
+  #proPic {
+    margin: 0.6em;
+    width: 7.5em;
+    height: 7.5em;
+  }
 
   .fas {
     font-size: 3.3em;
@@ -215,6 +228,12 @@ footer {
 
   #info {
     margin: 1em;
+  }
+  
+  #proPic {
+    margin: 0.7em;
+    width: 9em;
+    height: 9em;
   }
 
   .fas {
@@ -265,7 +284,9 @@ footer {
   }
 
   #proPic {
+    margin: 0.8em;
     width: 10em;
+    height: 10em;
   }
 
   .icon {
