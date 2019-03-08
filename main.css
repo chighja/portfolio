@@ -55,7 +55,13 @@ nav {
   text-align: left;
 }
 
+#line {
+  margin: auto;
+  width: 20%;
+}
+
 #info {
+  text-align: center;
   margin: 0.5em;
 }
 
@@ -93,10 +99,6 @@ footer {
 
 .fas-icon-mid {
   margin: 0.8em;
-}
-
-.fas-icon-bottom {
-  margin-top: 0.8em;
 }
 
 .fab {
@@ -189,7 +191,7 @@ footer {
   #info {
     margin: 0.8em;
   }
-  
+
   #proPic {
     margin: 0.6em;
     width: 7.5em;
@@ -229,7 +231,7 @@ footer {
   #info {
     margin: 1em;
   }
-  
+
   #proPic {
     margin: 0.7em;
     width: 9em;
@@ -299,10 +301,6 @@ footer {
 
   .fas-icon {
     margin: 1.5em;
-  }
-
-  .fas-icon-bottom {
-    margin-top: 1.5em;
   }
 
   .fab {
